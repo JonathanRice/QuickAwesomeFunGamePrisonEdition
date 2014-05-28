@@ -14,6 +14,7 @@ public class LicensePlateRun : MonoBehaviour {
 
 		this.setAllRenderFalse();
 		licensePressUpPlateUp.renderer.enabled = true;
+		StartCoroutine("countDownToLoose");
 	}
 	
 	// Update is called once per frame
@@ -90,5 +91,12 @@ public class LicensePlateRun : MonoBehaviour {
 
 		acceptInput = true;
 
+	}
+
+	IEnumerator countDownToLoose() {
+		yield return new WaitForSeconds(10.0f);
+		//TODO some kind of transition
+		//Time is up
+		Application.LoadLevel("ClimbTheWall");
 	}
 }
