@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\ClimbTheWall\ClimbTheWallRun.cs" />
      <Compile Include="Assets\LicensePlate\LicensePlateRun.cs" />
+     <Compile Include="Assets\MainMenu\MainMenuRun.cs" />
      <Compile Include="Assets\StealThePie\StealThePieRun.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
