@@ -8,12 +8,14 @@ public class LicensePlateRun : MonoBehaviour {
 	public GameObject licensePressUpPlateEmpty;
 	public GameObject licensePressUpPlateUp;
 	public GameObject licensePressUpPlateFail;
+	public GameObject transition;
 	bool acceptInput = true;
 	// Use this for initialization
 	void Start () {
 
 		this.setAllRenderFalse();
 		licensePressUpPlateUp.renderer.enabled = true;
+		transition.renderer.enabled = false;
 		StartCoroutine("countDownToLoose");
 	}
 	
@@ -95,8 +97,8 @@ public class LicensePlateRun : MonoBehaviour {
 
 	IEnumerator countDownToLoose() {
 		yield return new WaitForSeconds(10.0f);
-		//TODO some kind of transition
-		//Time is up
+		transition.renderer.enabled = true;
+		yield return new WaitForSeconds(0.5f);
 		loadNextLevel();
 	}
 	void loadNextLevel() {

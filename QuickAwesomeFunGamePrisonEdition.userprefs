@@ -1,10 +1,11 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\ClimbTheWall\ClimbTheWallRun.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MainMenu\MainMenuRun.cs">
     <Files>
       <File FileName="Assets\LicensePlate\LicensePlateRun.cs" Line="100" Column="19" />
-      <File FileName="Assets\ClimbTheWall\ClimbTheWallRun.cs" Line="33" Column="34" />
-      <File FileName="Assets\StealThePie\StealThePieRun.cs" Line="94" Column="1" />
+      <File FileName="Assets\ClimbTheWall\ClimbTheWallRun.cs" Line="42" Column="1" />
+      <File FileName="Assets\StealThePie\StealThePieRun.cs" Line="28" Column="4" />
+      <File FileName="Assets\MainMenu\MainMenuRun.cs" Line="10" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -8,6 +8,7 @@ public class StealThePieRun : MonoBehaviour {
 	public GameObject pie;
 	public GameObject win;
 	public GameObject fail;
+	public GameObject transition;
 
 	bool isWin;
 	bool acceptInput;
@@ -15,6 +16,7 @@ public class StealThePieRun : MonoBehaviour {
 	void Start () {
 		win.renderer.enabled = false;
 		fail.renderer.enabled = false;
+		transition.renderer.enabled = false;
 		acceptInput = true;
 		isWin = false;
 		StartCoroutine("countDownToLoose");
@@ -42,14 +44,14 @@ public class StealThePieRun : MonoBehaviour {
 		isWin = false;
 		fail.renderer.enabled = true;
 		yield return new WaitForSeconds(1.0f);
-		loadNextLevel();
+		StartCoroutine(loadNextLevel());
 	}
 	IEnumerator winNow() {
 		isWin = true;
 		yield return new WaitForSeconds(1.0f);
 		win.renderer.enabled = true;
 		yield return new WaitForSeconds(1.0f);
-		loadNextLevel();
+		StartCoroutine(loadNextLevel());
 	}
 	// This will make the sure woman flips back and forth three times in the 9 second time limit, but at slightly random intervals
 	IEnumerator womanMove() {
@@ -88,11 +90,12 @@ public class StealThePieRun : MonoBehaviour {
 			acceptInput = false;
 			fail.renderer.enabled = true;
 			yield return new WaitForSeconds(1.0f);
-			loadNextLevel();
+			StartCoroutine(loadNextLevel());
 		}
 	}
-	void loadNextLevel() {
-		//TODO some kind of transition
+	IEnumerator loadNextLevel() {
+		transition.renderer.enabled = true;
+		yield return new WaitForSeconds(0.5f);
 		Application.LoadLevel("LicensePlate");
 	}
 }
