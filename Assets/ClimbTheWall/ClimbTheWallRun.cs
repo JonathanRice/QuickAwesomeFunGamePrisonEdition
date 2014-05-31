@@ -27,7 +27,7 @@ public class ClimbTheWallRun : MonoBehaviour {
 		backgroundFree.renderer.enabled = true;
 		background.renderer.enabled = false;
 		yield return new WaitForSeconds(1.0f);
-		Application.LoadLevel("LicensePlate");
+		loadNextLevel();
 	}
 
 	IEnumerator countDownToLoose() {
@@ -35,7 +35,12 @@ public class ClimbTheWallRun : MonoBehaviour {
 		if (backgroundFree.renderer.enabled == false) {
 			//TODO some kind of transition
 			//Time is up and we are not headed toward the win screen
-			Application.LoadLevel("LicensePlate");
+			loadNextLevel();
 		}
+	}
+
+	void loadNextLevel() {
+		//TODO some kind of transition
+		Application.LoadLevel("StealThePie");
 	}
 }

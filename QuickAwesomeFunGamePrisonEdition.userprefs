@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\LicensePlate\LicensePlateRun.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\StealThePie\StealThePieRun.cs">
     <Files>
-      <File FileName="Assets\LicensePlate\LicensePlateRun.cs" Line="24" Column="65" />
-      <File FileName="Assets\ClimbTheWall\ClimbTheWallRun.cs" Line="11" Column="3" />
+      <File FileName="Assets\LicensePlate\LicensePlateRun.cs" Line="69" Column="19" />
+      <File FileName="Assets\ClimbTheWall\ClimbTheWallRun.cs" Line="16" Column="3" />
+      <File FileName="Assets\StealThePie\StealThePieRun.cs" Line="76" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

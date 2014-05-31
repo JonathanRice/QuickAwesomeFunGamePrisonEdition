@@ -6,6 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/ClimbTheWall/ClimbTheWall.unity
+    path: Assets/StealThePie/StealThePie.unity
   - enabled: 1
     path: Assets/LicensePlate/LicensePlate.unity
+  - enabled: 1
+    path: Assets/ClimbTheWall/ClimbTheWall.unity

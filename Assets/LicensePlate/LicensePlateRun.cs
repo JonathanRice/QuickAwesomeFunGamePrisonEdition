@@ -97,6 +97,10 @@ public class LicensePlateRun : MonoBehaviour {
 		yield return new WaitForSeconds(10.0f);
 		//TODO some kind of transition
 		//Time is up
+		loadNextLevel();
+	}
+	void loadNextLevel() {
+		//TODO some kind of transition
 		Application.LoadLevel("ClimbTheWall");
 	}
 }
